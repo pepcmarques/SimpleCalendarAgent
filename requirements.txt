@@ -1,0 +1,21 @@
+# Backend
+fastapi>=0.135.0
+uvicorn>=0.41.0
+python-jose>=3.5.0
+bcrypt>=5.0.0
+python-multipart>=0.0.22
+python-dotenv>=1.2.0
+
+# AI/LangGraph
+langchain>=1.2.0
+langchain-core>=1.2.0
+langchain-ollama>=1.0.0
+langgraph>=1.0.0
+langgraph-prebuilt>=1.0.0
+
+# HTTP client
+httpx>=0.28.0
+
+# Testing
+pytest>=9.0.0
+pytest-ordering>=0.6
