@@ -1,5 +1,5 @@
 """
-Text-based frontend interface for MeChat.
+Text-based frontend interface for Simple Calendar Agent
 Provides an interactive CLI for user authentication and event management.
 """
 
@@ -18,7 +18,7 @@ BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 
 
-class MeChatCLI:
+class SCACLI:
     def __init__(self):
         self.token = None
         self.username = None
@@ -31,7 +31,7 @@ class MeChatCLI:
         """Print a styled header."""
         self.clear_screen()
         print("=" * 50)
-        print(f"  MeChat - {title}")
+        print(f"  Simple Calendar Agent - {title}")
         print("=" * 50)
         print()
 
@@ -364,5 +364,5 @@ class MeChatCLI:
 
 
 if __name__ == "__main__":
-    cli = MeChatCLI()
+    cli = SCACLI()
     cli.run()

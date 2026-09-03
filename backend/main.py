@@ -19,7 +19,7 @@ from backend.auth import (
     ACCESS_TOKEN_EXPIRE_MINUTES,
 )
 
-app = FastAPI(title="MeChat API", version="1.0.0")
+app = FastAPI(title="SCM API", version="1.0.0")
 db = Database()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 

@@ -1,4 +1,4 @@
-# MeChat - Calendar Management with AI
+# Simple Calendar Management with AI
 
 A calendar management application with FastAPI backend, CLI frontend, and AI-powered chat using LangGraph + Ollama.
 
@@ -12,7 +12,7 @@ A calendar management application with FastAPI backend, CLI frontend, and AI-pow
 ## Project Structure
 
 ```
-mechat/
+SimpleCalendarAgent/
 ├── backend/
 │   ├── main.py          # FastAPI app with user and event endpoints
 │   ├── auth.py          # JWT authentication and password hashing
@@ -40,9 +40,22 @@ pip install -r requirements.txt
 
 # Set up environment variables
 cp .env.example .env  # or create .env with OLLAMA_MODEL=llama3.2
+
+# Create the database
+echo {} > database.json
+
+# Ollama
+ollama pull llama3.2:3b
 ```
 
+**Note:** This system uses a JSON file as "database" to make it as simple as possible
+
 ## Running
+
+### Start LLM
+```bash
+ollama serve
+```
 
 ### Start the backend server
 

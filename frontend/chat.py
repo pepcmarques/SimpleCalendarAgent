@@ -26,7 +26,7 @@ def print_header(title: str):
     """Print a styled header."""
     clear_screen()
     print("=" * 60)
-    print(f"  MeChat - {title}")
+    print(f"  Simple Calendar Agent - {title}")
     print("=" * 60)
     print()
 
